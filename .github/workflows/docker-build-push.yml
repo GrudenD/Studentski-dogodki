@@ -16,9 +16,10 @@ jobs:
     - name: Login to Docker Hub
       run: docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} -p ${{ secrets.DOCKER_HUB_PASSWORD }}
 
-    - name: Build and Push Docker Image
+    - name: Build and Push Docker Image (Windows)
       run: |
-        docker buildx inspect
-        docker buildx build --platform windows/amd64,linux/amd64,linux/arm64 -t grudend/studentski-dogodki:slikadocker-latest -t grudend/studentski-dogodki:slikadocker-${{ github.sha }} .
+        docker build -t grudend/studentski-dogodki:slikadocker-latest -t grudend/studentski-dogodki:slikadocker-${{ github.sha }} .
         docker push grudend/studentski-dogodki:slikadocker-latest
         docker push grudend/studentski-dogodki:slikadocker-${{ github.sha }}
+
+    # Add similar steps for Linux and other platforms if needed
