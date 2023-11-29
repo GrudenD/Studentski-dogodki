@@ -28,8 +28,11 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
+        tags: |
+          grudend/studentski-dogodki:latest
+          grudend/studentski-dogodki:${{ github.sha }}
 
     - name: Tag and push to new repository
       run: |
-        docker tag slikadocker grudend/studentski-dogodki:latest
+        docker tag grudend/studentski-dogodki:latest grudend/studentski-dogodki:latest
         docker push grudend/studentski-dogodki:latest
