@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vq99/0elgQoD628+zNoM4/SfIHhLbsA+F3Fdq3QhnAvkXMhbEL8U72du+YdxuG+iOUOTPIwvjpsfn3xNLEkFTw==",
+  "dgSpecHash": "0oAvolKslewl0AblQBx7DGzxSDtN2hd7xjQTjWkSITI/KCUmFGv4i3oQHe89fpqjfHmsDHzkWnLzpjzixh8hPA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Uporabnik\\OneDrive - Nea Culpa d.o.o\\Namizje\\Hecžaddad\\StudDogod\\StudentskiDogodki\\StudentskiDogodki.csproj",
+  "projectFilePath": "D:\\SOLA\\FERI2\\StudentskiDogodki\\Studentski-dogodki\\StudentskiDogodki\\StudentskiDogodki.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Uporabnik\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.2\\microsoft.visualstudio.azure.containers.tools.targets.1.17.2.nupkg.sha512"
   ],

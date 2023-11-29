@@ -7,11 +7,11 @@ namespace StudentskiDogodki
         private int stKart;
         private Dogodek dogodek;
 
-        public void PreveriRazpoložljivostKart()
+        public void PreveriRazpolozljivostKart()
         {
             throw new System.NotImplementedException("Not implemented");
         }
-        public void VrniRazpoložljivostKart()
+        public void VrniRazpolozljivostKart()
         {
             throw new System.NotImplementedException("Not implemented");
         }

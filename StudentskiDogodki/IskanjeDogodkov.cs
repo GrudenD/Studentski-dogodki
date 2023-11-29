@@ -7,7 +7,7 @@ namespace StudentskiDogodki
         private string iskalnoPolje;
         private DateTime vnosDatum;
         private string vnosLokacija;
-        private enum vnosVrsteDogodkov;
+        private enum vnosVrsteDogodkov { };
         private List<Dogodek> seznamDogodkov;
 
         public void VrniIskalneParametre()

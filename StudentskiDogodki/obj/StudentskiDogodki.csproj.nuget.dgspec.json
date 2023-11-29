@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Uporabnik\\OneDrive - Nea Culpa d.o.o\\Namizje\\Hecžaddad\\StudDogod\\StudentskiDogodki\\StudentskiDogodki.csproj": {}
+    "D:\\SOLA\\FERI2\\StudentskiDogodki\\Studentski-dogodki\\StudentskiDogodki\\StudentskiDogodki.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Uporabnik\\OneDrive - Nea Culpa d.o.o\\Namizje\\Hecžaddad\\StudDogod\\StudentskiDogodki\\StudentskiDogodki.csproj": {
+    "D:\\SOLA\\FERI2\\StudentskiDogodki\\Studentski-dogodki\\StudentskiDogodki\\StudentskiDogodki.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Uporabnik\\OneDrive - Nea Culpa d.o.o\\Namizje\\Hecžaddad\\StudDogod\\StudentskiDogodki\\StudentskiDogodki.csproj",
+        "projectUniqueName": "D:\\SOLA\\FERI2\\StudentskiDogodki\\Studentski-dogodki\\StudentskiDogodki\\StudentskiDogodki.csproj",
         "projectName": "StudentskiDogodki",
-        "projectPath": "C:\\Users\\Uporabnik\\OneDrive - Nea Culpa d.o.o\\Namizje\\Hecžaddad\\StudDogod\\StudentskiDogodki\\StudentskiDogodki.csproj",
+        "projectPath": "D:\\SOLA\\FERI2\\StudentskiDogodki\\Studentski-dogodki\\StudentskiDogodki\\StudentskiDogodki.csproj",
         "packagesPath": "C:\\Users\\Uporabnik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Uporabnik\\OneDrive - Nea Culpa d.o.o\\Namizje\\Hecžaddad\\StudDogod\\StudentskiDogodki\\obj\\",
+        "outputPath": "D:\\SOLA\\FERI2\\StudentskiDogodki\\Studentski-dogodki\\StudentskiDogodki\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
