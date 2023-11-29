@@ -14,7 +14,8 @@ namespace StudentskiDogodki
         {
             throw new System.NotImplementedException("Not implemented");
         }
-
+        Console.WriteLine("Hello");
+        
         private Fotografije fotografije;
 
     }
