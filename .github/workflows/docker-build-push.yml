@@ -1,39 +1,35 @@
+name: Build and Push Docker Image
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
-
-  build:
-
+  build-and-push:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-      - name: Checkout code
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v1
 
-        uses: actions/checkout@v2
+    - name: Login to Docker Hub
+      uses: docker/login-action@v1
+      with:
+        username: ${{ secrets.DOCKER_HUB_USERNAME }}
+        password: ${{ secrets.DOCKER_HUB_PASSWORD }}
 
-      - name: Set up Docker Buildx
+    - name: Build and push Docker image
+      uses: docker/build-push-action@v2
+      with:
+        context: .
+        file: ./Dockerfile
+        push: true
 
-        uses: docker/setup-buildx-action@v1
-
-      - name: Login to Docker Hub
-
-        uses: docker/login-action@v1
-
-        with:
-
-          username: ${{ secrets.DOCKER_HUB_USERNAME }}
-
-          password: ${{ secrets.DOCKER_HUB_PASSWORD }}
-
-      - name: Build and push Docker image
-
-        uses: docker/build-push-action@v2
-
-        with:
-
-          context: .
-
-          file: ./Dockerfile
-
-          push: true
-
-          tags: grudend/slikadocker:latest
+    - name: Tag and push to new repository
+      run: |
+        docker tag slikadocker grudend/studentski-dogodki:latest
+        docker push grudend/studentski-dogodki:latest
