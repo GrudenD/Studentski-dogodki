@@ -8,7 +8,7 @@ namespace StudentskiDogodki
         private Uporabnik uporabnik;
         private Dogodek dogodek;
         private int kolicinaKart;
-
+        Console.WriteLine("Hello");
     }
 
 }
