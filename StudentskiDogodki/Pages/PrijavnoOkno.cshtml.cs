@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace StudentskiDogodki.Pages
 {
-    public class Index1Model : PageModel
+    public class PrijavnoOkno : PageModel
     {
         public void OnGet()
         {
