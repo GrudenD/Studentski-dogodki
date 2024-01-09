@@ -1,9 +1,13 @@
-using System;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace StudentskiDogodki
+namespace StudentskiDogodki.Pages
 {
-    public class Deljenje
+    public class Deljenje : PageModel
     {
+        public void OnGet()
+        {
+        }
         private enum nacin { };
 
         public void IzberiNacin()
@@ -14,9 +18,8 @@ namespace StudentskiDogodki
         {
             throw new System.NotImplementedException("Not implemented");
         }
-        
+
         private Fotografije fotografije;
 
     }
-
 }

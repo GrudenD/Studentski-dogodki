@@ -15,8 +15,11 @@
 
   <ItemGroup>
     <None Remove="Pages\DeljenjeOkno.cshtml.cs~RF1ab7029f.TMP" />
+    <None Remove="Pages\DeljenjeOkno.cshtml.cs~RF1ab971ba.TMP" />
     <None Remove="Pages\DeljenjeOkno.cshtml~RF1aac6863.TMP" />
+    <None Remove="Pages\DeljenjeOkno.cshtml~RF1abc7d16.TMP" />
     <None Remove="Pages\DodDogodkaOkno.cshtml~RF1aacec87.TMP" />
+    <None Remove="Pages\OknoRezervacija.cshtml.cs~RF1abf8787.TMP" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,6 +1,6 @@
 using System;
 
-namespace StudentskiDogodki
+namespace StudentskiDogodki.Pages
 {
     public class Karta
     {
