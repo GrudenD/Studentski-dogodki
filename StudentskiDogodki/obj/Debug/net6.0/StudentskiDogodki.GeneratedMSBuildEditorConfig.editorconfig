@@ -16,12 +16,40 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\SOLA\FERI2\StudentskiDogodki\Studentski-dogodki\StudentskiDogodki
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/SOLA/FERI2/StudentskiDogodki/Studentski-dogodki/StudentskiDogodki/Pages/DeljenjeOkno.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsamVuamVPa25vLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SOLA/FERI2/StudentskiDogodki/Studentski-dogodki/StudentskiDogodki/Pages/DodDogodkaOkno.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRG9kRG9nb2RrYU9rbm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/SOLA/FERI2/StudentskiDogodki/Studentski-dogodki/StudentskiDogodki/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/SOLA/FERI2/StudentskiDogodki/Studentski-dogodki/StudentskiDogodki/Pages/GlavnoOkno.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2xhdm5vT2tuby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/SOLA/FERI2/StudentskiDogodki/Studentski-dogodki/StudentskiDogodki/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SOLA/FERI2/StudentskiDogodki/Studentski-dogodki/StudentskiDogodki/Pages/IskanjeDogodkov.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSXNrYW5qZURvZ29ka292LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SOLA/FERI2/StudentskiDogodki/Studentski-dogodki/StudentskiDogodki/Pages/OknoRezervacija.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT2tub1JlemVydmFjaWphLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SOLA/FERI2/StudentskiDogodki/Studentski-dogodki/StudentskiDogodki/Pages/PotrditvenoOknoIzbris.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG90cmRpdHZlbm9Pa25vSXpicmlzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SOLA/FERI2/StudentskiDogodki/Studentski-dogodki/StudentskiDogodki/Pages/PrijavnoOkno.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpamF2bm9Pa25vLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/SOLA/FERI2/StudentskiDogodki/Studentski-dogodki/StudentskiDogodki/Pages/Privacy.cshtml]

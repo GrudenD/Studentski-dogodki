@@ -12,7 +12,12 @@ namespace StudentskiDogodki
 
         public void PreveriPodatke()
         {
-            throw new System.NotImplementedException("Not implemented");
+            // throw new System.NotImplementedException("Not implemented");
+            if (ime != null && priimek != null && stKartice != null && cvv != null && veljaDo != null)
+            {
+                return;
+            }
+           
         }
 
         private GlavnoOkno glavnoOkno;
