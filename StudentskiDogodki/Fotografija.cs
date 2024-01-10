@@ -15,6 +15,8 @@ namespace StudentskiDogodki.Pages
             this.PotDoFotografije = potDoFotografije;
             this.Dogodek = dogodek;
         }
+      
+
         public void VrniFotografije()
         {
             throw new System.NotImplementedException("Not implemented");

@@ -1,3 +1,5 @@
+using StudentskiDogodki.Pages;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -21,5 +23,6 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapRazorPages();
-
+Izvedi();
 app.Run();
+

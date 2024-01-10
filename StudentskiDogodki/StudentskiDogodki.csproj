@@ -14,11 +14,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Pages\brwpbn3t.pj2~" />
     <None Remove="Pages\DeljenjeOkno.cshtml.cs~RF1ab7029f.TMP" />
     <None Remove="Pages\DeljenjeOkno.cshtml.cs~RF1ab971ba.TMP" />
     <None Remove="Pages\DeljenjeOkno.cshtml~RF1aac6863.TMP" />
     <None Remove="Pages\DeljenjeOkno.cshtml~RF1abc7d16.TMP" />
     <None Remove="Pages\DodDogodkaOkno.cshtml~RF1aacec87.TMP" />
+    <None Remove="Pages\isai2t1d.5vt~" />
+    <None Remove="Pages\khpyttnf.wr0~" />
+    <None Remove="Pages\loiufkc2.hak~" />
     <None Remove="Pages\OknoRezervacija.cshtml.cs~RF1abf8787.TMP" />
   </ItemGroup>
 

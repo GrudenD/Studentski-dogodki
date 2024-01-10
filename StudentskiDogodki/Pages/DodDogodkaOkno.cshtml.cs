@@ -5,6 +5,7 @@ namespace StudentskiDogodki.Pages
 {
     public class DodDogodkaOkno : PageModel
     {
+ 
         public void PrikaziDialogDodajanje()
         {
             throw new System.NotImplementedException("Not implemented");
@@ -12,6 +13,7 @@ namespace StudentskiDogodki.Pages
         public void NovDogodek()
         {
             throw new System.NotImplementedException("Not implemented");
+           
         }
         public void PrikaziUspesnost()
         {

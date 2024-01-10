@@ -4,3 +4,30 @@
     ViewData["Title"] = "Iskanje dogodkov";
 }
 
+<div class="text-center">
+    <h2>@ViewData["Title"]</h2>
+
+    <form method="post">
+        <label for="iskalnoPolje">Iskalno polje:</label>
+        <input type="text" id="iskalnoPolje" name="iskalnoPolje" value="@Model.iskalnoPolje" />
+
+        <label for="vnosDatum">Vnos datum:</label>
+        <input type="date" id="vnosDatum" name="vnosDatum" value="@Model.vnosDatum.ToString("yyyy-MM-dd")" />
+
+        <label for="vnosLokacija">Vnos lokacija:</label>
+        <input type="text" id="vnosLokacija" name="vnosLokacija" value="@Model.vnosLokacija" />
+
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+
+    <hr />
+
+    <h3>Seznam Dogodkov</h3>
+    <ul>
+        @foreach (var dogodek in Model.seznamDogodkov)
+        {
+            <li>@dogodek.Ime - @dogodek.Datum.ToString("dd.MM.yyyy") - @dogodek.Lokacija</li>
+        }
+    </ul>
+
+</div>
