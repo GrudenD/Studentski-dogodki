@@ -6,7 +6,7 @@ namespace StudentskiDogodki.Pages
     {
         private List<Dogodek> listDogodkov;
         private List<Uporabnik> listUporabnikov;
-        private List<Fotografije> listFotografij;
+        private List<Fotografija> listFotografij;
         private List<Karta> listKart;
         private List<Popust> listPopustov;
         private List<Nakup> listNakupov;
@@ -46,7 +46,7 @@ namespace StudentskiDogodki.Pages
 
         private Uporabnik[] uporabniks;
         private Dogodek[] dogodeks;
-        private Fotografije[] fotografijes;
+        private Fotografija[] fotografijes;
         private Karta[] kartas;
         private Popust[] popusts;
         private Nakup nakup;

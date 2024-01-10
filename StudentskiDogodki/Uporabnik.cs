@@ -1,14 +1,28 @@
+using Microsoft.EntityFrameworkCore.Migrations;
 using System;
 
 namespace StudentskiDogodki.Pages
 {
     public class Uporabnik
     {
-        private String ime;
-        private String priimek;
-        private string mail;
-        private DateOnly datumRojstva;
-        private string geslo;
+        public int Id { get; set; }
+        public string Ime { get; set; }
+        public string Priimek {  get; set; }
+        public string Mail { get; set; }
+        public DateOnly DatumRojstva {  get; set; }
+        public string Geslo { get; set; }
+
+        public Uporabnik() { }
+        public Uporabnik(string ime, string priimek, string mail, DateOnly datumRojstva, string geslo)
+        {
+            Ime = ime;
+            Priimek = priimek;
+            Mail = mail;
+            DatumRojstva = datumRojstva;
+            Geslo = geslo;
+         
+        }
+
 
         private Evidenca evidenca;
         private PrijavnoOkno prijavnoOkno;

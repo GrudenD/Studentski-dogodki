@@ -19,7 +19,7 @@ namespace StudentskiDogodki.Pages
             throw new System.NotImplementedException("Not implemented");
         }
 
-        private Fotografije fotografije;
+        private Fotografija fotografije;
 
     }
 }

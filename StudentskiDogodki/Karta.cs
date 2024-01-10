@@ -4,8 +4,17 @@ namespace StudentskiDogodki.Pages
 {
     public class Karta
     {
-        private int stKart;
-        private Dogodek dogodek;
+        public int Id { get; set; }
+        public int StKart {  get; set; }
+        public Dogodek Dogodek { get; set; }
+        public double Cena { get; set; }
+        public Karta() { }
+        public Karta(int stKart, Dogodek dogodek, double cena) 
+        {
+            this.StKart = stKart;
+            this.Dogodek = dogodek;
+            this.Cena = cena;
+        }
 
         public void PreveriRazpolozljivostKart()
         {

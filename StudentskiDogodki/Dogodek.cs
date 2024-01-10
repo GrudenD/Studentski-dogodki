@@ -4,13 +4,19 @@ namespace StudentskiDogodki.Pages
 {
     public class Dogodek
     {
-        private string ime;
-        private DateTime datum;
-        private string lokacija;
-        private string nastopajoci;
-        private string opis;
-        private List<Karta> karte;
+        public int Id { get; set; }
+        public string Ime { get; set; }
+        public DateTime Datum { get; set; }
+        public string Lokacija { get; set; }
+        public string Nastopajoci { get; set; }
 
+        public Dogodek(string ime, DateTime datum, string lokacija, string nastopajoci)
+        {
+            this.Ime = ime;
+            this.Datum = datum;
+            this.Lokacija = lokacija;
+            this.Nastopajoci = nastopajoci;
+        }
         public void VrniPodrobnostDogodka()
         {
             throw new System.NotImplementedException("Not implemented");
