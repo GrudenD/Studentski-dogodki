@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\Slike\\User.png"
     },
     {
+      "Id": "D:\\SOLA\\FERI2\\StudentskiDogodki\\Studentski-dogodki\\StudentskiDogodki\\wwwroot\\Slike\\dodan.jpg",
+      "PackagePath": "staticwebassets\\Slike\\dodan.jpg"
+    },
+    {
       "Id": "D:\\SOLA\\FERI2\\StudentskiDogodki\\Studentski-dogodki\\StudentskiDogodki\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

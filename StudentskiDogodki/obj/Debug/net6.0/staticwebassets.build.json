@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FGf5A9fHrQpqFmBE0ik9jHIOswcpNULU3IL7cLnvhT8=",
+  "Hash": "kYfV/Rke9qLyIyCoaMJzCU+jCiHWzsLelPdmH9Qvfqk=",
   "Source": "StudentskiDogodki",
   "BasePath": "_content/StudentskiDogodki",
   "Mode": "Default",
@@ -1086,6 +1086,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Slike\\Beerpong.jpg"
+    },
+    {
+      "Identity": "D:\\SOLA\\FERI2\\StudentskiDogodki\\Studentski-dogodki\\StudentskiDogodki\\wwwroot\\Slike\\dodan.jpg",
+      "SourceId": "StudentskiDogodki",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SOLA\\FERI2\\StudentskiDogodki\\Studentski-dogodki\\StudentskiDogodki\\wwwroot\\",
+      "BasePath": "_content/StudentskiDogodki",
+      "RelativePath": "Slike/dodan.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Slike\\dodan.jpg"
     },
     {
       "Identity": "D:\\SOLA\\FERI2\\StudentskiDogodki\\Studentski-dogodki\\StudentskiDogodki\\wwwroot\\Slike\\Fasenk.jpg",

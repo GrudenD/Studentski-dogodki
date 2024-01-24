@@ -24,8 +24,15 @@
                         </li>                                                            
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/PrijavnoOkno">Prijava</a>
-                        </li>    
+                        </li> 
+                        @if(PrijavnoOkno.prijavljen == true)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/DodDogodkaOkno">DodajDogodek</a>
+                            </li>
+                        }
                        
+
 
                     </ul>
                 </div>

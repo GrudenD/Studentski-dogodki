@@ -29,7 +29,8 @@
                 @foreach (var dogodek in Model.Dogodek)
                 { 
                     <tr>
-                    <td><b>Datum dogodka:</b> @dogodek.Datum.ToString("dd.MM.yyyy")</td>
+                    <td><b>Datum dogodka:</b> @dogodek.Datum.ToString("dd.MM.yyyy") @dogodek.Datum.ToString("HH:mm")
+                    </td>
                     </tr>
                 <tr><td><b> Lokacija:</b> @dogodek.Lokacija</td></tr>
                 <tr><td><b>Nastopajoci: </b> @dogodek.Nastopajoci </td></tr>
@@ -41,7 +42,7 @@
         <div >
             @foreach (var dogodek in Model.Dogodek)
             {
-            <img src=@dogodek.PotDoNaslovnce height="300" width="800" />
+            <img src=@dogodek.PotDoNaslovnce height="400" width="800" />
             }
         </div>
 
