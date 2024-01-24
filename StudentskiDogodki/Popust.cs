@@ -17,6 +17,7 @@ namespace StudentskiDogodki.Pages
 
         private Evidenca evidenca;
 
+        
     }
 
 }

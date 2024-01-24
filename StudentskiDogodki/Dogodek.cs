@@ -9,13 +9,14 @@ namespace StudentskiDogodki.Pages
         public DateTime Datum { get; set; }
         public string Lokacija { get; set; }
         public string Nastopajoci { get; set; }
-
-        public Dogodek(string ime, DateTime datum, string lokacija, string nastopajoci)
+        public string PotDoNaslovnce { get; set; }
+        public Dogodek(string ime, DateTime datum, string lokacija, string nastopajoci, string potDoNaslovnce)
         {
             this.Ime = ime;
             this.Datum = datum;
             this.Lokacija = lokacija;
             this.Nastopajoci = nastopajoci;
+            PotDoNaslovnce = potDoNaslovnce;
         }
         public void VrniPodrobnostDogodka()
         {

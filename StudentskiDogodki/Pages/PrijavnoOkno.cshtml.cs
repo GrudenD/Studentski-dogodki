@@ -3,8 +3,10 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace StudentskiDogodki.Pages
 {
+    
     public class PrijavnoOkno : PageModel
     {
+       public static bool prijavljen = false;
         public void PrikaziDialogPrijava()
         {
             throw new System.NotImplementedException("Not implemented");
@@ -27,6 +29,14 @@ namespace StudentskiDogodki.Pages
         private IndexModel glavnoOkno;
         public void OnGet()
         {
+           
+        }
+
+        public IActionResult OnPost()
+        {
+            prijavljen = true;
+            return RedirectToPage("/Index");
+
         }
     }
 }

@@ -22,7 +22,7 @@ namespace StudentskiDogodki.Pages
             throw new System.NotImplementedException("Not implemented");
         }
 
-        private Deljenje deljenje;
+      
 
         private Evidenca evidenca;
 

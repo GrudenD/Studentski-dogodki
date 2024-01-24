@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace StudentskiDogodki.Pages
 {
-    public class Deljenje : PageModel
+    public class PotrjenNakup : PageModel
     {
         public void OnGet()
         {

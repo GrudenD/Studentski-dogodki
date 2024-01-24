@@ -38,6 +38,10 @@ namespace StudentskiDogodki.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("PotDoNaslovnce")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.HasKey("Id");
 
                     b.ToTable("Dogodki");

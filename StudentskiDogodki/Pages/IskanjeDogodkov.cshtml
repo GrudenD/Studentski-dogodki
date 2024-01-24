@@ -1,33 +1,54 @@
 ﻿@page
+@using StudentskiDogodki.Pages
 @model StudentskiDogodki.Pages.IskanjeDogodkov
 @{
-    ViewData["Title"] = "Iskanje dogodkov";
+    ViewData["Title"] = "Iskani dogodek";
 }
 
+@if (PrijavnoOkno.prijavljen == true)
+{
+    <div align="right">
+        <img src="/Slike/User.png" height="30">
+    </div>
+
+}
 <div class="text-center">
     <h2>@ViewData["Title"]</h2>
 
-    <form method="post">
+    <form>
         <label for="iskalnoPolje">Iskalno polje:</label>
-        <input type="text" id="iskalnoPolje" name="iskalnoPolje" value="@Model.iskalnoPolje" />
-
-        <label for="vnosDatum">Vnos datum:</label>
-        <input type="date" id="vnosDatum" name="vnosDatum" value="@Model.vnosDatum.ToString("yyyy-MM-dd")" />
-
-        <label for="vnosLokacija">Vnos lokacija:</label>
-        <input type="text" id="vnosLokacija" name="vnosLokacija" value="@Model.vnosLokacija" />
-
-        <button type="submit" class="btn btn-primary">Search</button>
+        <input type="text" id="iskalnoPolje" name="iskalnoPolje" placeholder="Rocktronica"/>
+       
     </form>
 
     <hr />
 
     <h3>Seznam Dogodkov</h3>
-    <ul>
+    <table align="center">
         @foreach (var dogodek in Model.seznamDogodkov)
         {
-            <li>@dogodek.Ime - @dogodek.Datum.ToString("dd.MM.yyyy") - @dogodek.Lokacija</li>
+            <tr>
+                <td>
+                    
+                        <div>
+                            @if (dogodek.Ime == "Rocktronica")
+                        {
+                            <form method="post">
+                                <button type="submit">
+                                <p><b>Ime dogodka:</b> @dogodek.Ime</p>
+                                <p>@dogodek.Datum.ToString("dd.MM.yyyy")</p>
+                                <p><b>Lokacija: </b>@dogodek.Lokacija</p>
+                                <p><img src=@dogodek.PotDoNaslovnce height="100" width="160"/></p>
+                                </button>
+                                </form>
+                            }
+                        </div>
+                    
+                </td>
+            </tr>
         }
-    </ul>
+    </table>
+
 
 </div>
+

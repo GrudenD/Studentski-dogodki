@@ -11,6 +11,8 @@
 
   <ItemGroup>
     <Content Remove="Pages\OknoZaVnosPodatkov.cshtml" />
+    <Content Remove="wwwroot\Slike\Rocktronica.png" />
+    <Content Remove="wwwroot\Slike\Standup.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,6 +26,23 @@
     <None Remove="Pages\khpyttnf.wr0~" />
     <None Remove="Pages\loiufkc2.hak~" />
     <None Remove="Pages\OknoRezervacija.cshtml.cs~RF1abf8787.TMP" />
+    <None Remove="Pages\Slike\Rocktronica.png" />
+    <None Remove="Pages\Slike\Standup.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Pages\Slike\Rocktronica.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Pages\Slike\Standup.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="wwwroot\Slike\Rocktronica.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="wwwroot\Slike\Standup.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>

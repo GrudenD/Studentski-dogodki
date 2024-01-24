@@ -5,24 +5,14 @@ namespace StudentskiDogodki.Pages
 {
     public class DodDogodkaOkno : PageModel
     {
- 
-        public void PrikaziDialogDodajanje()
+        private BazaContext _db;
+
+        public DodDogodkaOkno(BazaContext db)
         {
-            throw new System.NotImplementedException("Not implemented");
+            _db = db;
         }
-        public void NovDogodek()
-        {
-            throw new System.NotImplementedException("Not implemented");
-           
-        }
-        public void PrikaziUspesnost()
-        {
-            throw new System.NotImplementedException("Not implemented");
-        }
-        public void Close()
-        {
-            throw new System.NotImplementedException("Not implemented");
-        }
+
+       
 
         private Dogodek dogodek;
 

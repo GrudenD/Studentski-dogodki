@@ -13,13 +13,13 @@ namespace StudentskiDogodki.Pages
         public DbSet<Karta> Karte { get; set; }
         public DbSet<Popust> Popusti { get; set; }
         public DbSet<Uporabnik> Uporabniki { get; set; }
-
         public string DbPath { get; }
 
         public BazaContext()
         {
             string startupPath = System.IO.Directory.GetCurrentDirectory();
             DbPath = System.IO.Path.Join(startupPath, "BazaDB.db");
+           
         }
       
 

@@ -16,10 +16,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\SOLA\FERI2\StudentskiDogodki\Studentski-dogodki\StudentskiDogodki
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/SOLA/FERI2/StudentskiDogodki/Studentski-dogodki/StudentskiDogodki/Pages/Deljenje.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsamVuamUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/SOLA/FERI2/StudentskiDogodki/Studentski-dogodki/StudentskiDogodki/Pages/DodDogodkaOkno.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRG9kRG9nb2RrYU9rbm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,12 +40,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG90cmRpdHZlbm9Pa25vSXpicmlzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/SOLA/FERI2/StudentskiDogodki/Studentski-dogodki/StudentskiDogodki/Pages/PotrjenNakup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG90cmplbk5ha3VwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/SOLA/FERI2/StudentskiDogodki/Studentski-dogodki/StudentskiDogodki/Pages/PrijavnoOkno.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpamF2bm9Pa25vLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/SOLA/FERI2/StudentskiDogodki/Studentski-dogodki/StudentskiDogodki/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SOLA/FERI2/StudentskiDogodki/Studentski-dogodki/StudentskiDogodki/Pages/Rocktronica.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9ja3Ryb25pY2EuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/SOLA/FERI2/StudentskiDogodki/Studentski-dogodki/StudentskiDogodki/Pages/Shared/_ValidationScriptsPartial.cshtml]

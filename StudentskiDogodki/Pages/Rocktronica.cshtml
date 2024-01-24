@@ -1,0 +1,90 @@
+﻿@page
+@using StudentskiDogodki.Pages
+@model StudentskiDogodki.Pages.Rocktronica
+@{
+    ViewData["Title"] = "Rocktronica";
+}
+@if (PrijavnoOkno.prijavljen == true)
+{
+    <div align="right">
+        <img src="/Slike/User.png" height="30">
+    </div>
+
+}
+<head>
+    <style>
+        body {
+            display: grid;
+            
+        }
+
+    </style>
+</head>
+<body>
+   
+        <h2>@ViewData["Title"]</h2>
+
+        <div>
+            <table>
+                @foreach (var dogodek in Model.Dogodek)
+                { 
+                    <tr>
+                    <td><b>Datum dogodka:</b> @dogodek.Datum.ToString("dd.MM.yyyy")</td>
+                    </tr>
+                <tr><td><b> Lokacija:</b> @dogodek.Lokacija</td></tr>
+                <tr><td><b>Nastopajoci: </b> @dogodek.Nastopajoci </td></tr>
+           
+                }
+            </table>
+        </div>
+
+        <div >
+            @foreach (var dogodek in Model.Dogodek)
+            {
+            <img src=@dogodek.PotDoNaslovnce height="300" width="800" />
+            }
+        </div>
+
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    </tr>
+                <tr>
+                    <td>
+                    <b>Opis: </b> Največji in najboljši(edini) festival v okolici Velikih Lašč,
+                        Letos poteka že 9 izvedba, tokrat v zimski obliki.
+                        Pridite na idilično lokacijo, kjer se boste lahko zabavali ob najboljši glasbi.
+                        Pričakujte najboljše izvajalce, najboljšo hrano in najboljšo zabavo.
+                        Pridite in se prepričajte zakaj je Rocktronica najboljši festival v okolici.
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h4>Nakup vstopnic: </h4>
+        <form method="post">
+            <label for="stVstopnic">Stevilo vstopnic</label>
+            <input type="number" id="stVstopnic" name="stVstopnic"  placeholder="0"/>
+            <button type="submit" id="submit" class="btn btn-primary">Potrdi</button>
+        </form>
+        </div>
+
+    @if (PrijavnoOkno.prijavljen == true)
+    {
+        <div>
+            <h4>Rezerviraj: </h4>
+            <form method="post">
+                <label for="stVstopnic">Stevilo vstopnic</label>
+                <input type="number" id="stVstopnic" name="stVstopnic" placeholder="0" />
+                <button type="submit" id="submit" class="btn btn-primary">Rezerviraj</button>
+            </form>
+        </div>
+
+    }
+    
+</body>

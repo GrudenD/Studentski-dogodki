@@ -1,17 +1,49 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Studentski Dogodki";
 }
+<style>
+    button{
+    padding: 30;
+    }
+</style>
 
+
+@if (PrijavnoOkno.prijavljen == true)
+{
+    <div align="right">
+        <img src="/Slike/User.png" height="30">
+    </div>
+}
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <button onclick="PreveriPopust()">Odstrani</button>
-    <h2>Seznam Dogodkov</h2>
+    <h2>@ViewData["Title"]</h2>
+
+    <form method="post">
+        <label for="iskalnoPolje">Iskalno polje:</label>
+        <input type="text" id="iskalnoPolje" name="iskalnoPolje" />
+        <button type="submit" id="submit" class="btn btn-primary">Search</button>
+    </form>
+
+    <hr />
+
+    <h3>Seznam Dogodkov</h3>
+  
+            @foreach (var dogodek in Model.seznamDogodkov)
+            {
+            <form>
+                <button type="submit">
+                    <p><b>Ime dogodka:</b> @dogodek.Ime</p>
+                    <p>@dogodek.Datum.ToString("dd.MM.yyyy")</p>
+                    <p><b>Lokacija: </b>@dogodek.Lokacija</p>
+                    <p><img src=@dogodek.PotDoNaslovnce height="100" width="160" /></p>
+                </button>
+            </form>
+            }
+       
+   
+
+
 </div>
-<div class="text-center">
-    <button onclick="PreveriPopust()">Odstrani</button>
-    <a class="btn btn-primary" asp-page="OknoRezervacija">Go to Another Page</a>
-</div>
+
 

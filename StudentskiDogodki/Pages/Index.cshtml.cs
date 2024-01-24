@@ -7,88 +7,55 @@ namespace StudentskiDogodki.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
-        public IndexModel(ILogger<IndexModel> logger)
+      
+        private BazaContext _db;
+
+        public IndexModel(BazaContext db)
         {
-            _logger = logger; 
+            _db = db;
         }
 
-        public string IskanjeDogodka()
+        public string iskalnoPolje { get; set; }
+
+        public List<Dogodek> seznamDogodkov = new List<Dogodek>();
+
+        public void VrniIskalneParametre()
         {
-            throw new System.NotImplementedException("Not implemented");
+           
+            iskalnoPolje = "Vnesi";
 
         }
-        public void IzbiraDogodka()
-        {
-            throw new System.NotImplementedException("Not implemented");
-        }
-        public void PrikazFotografij()
-        {
-            throw new System.NotImplementedException("Not implemented");
 
-        }
-        public void PrikazIzbraneFotografije()
+        public void IskanjeNaVneseneParametre()
         {
-            throw new System.NotImplementedException("Not implemented");
-        }
-        public void OknoZaVnosPodatkov()
-        {
-            throw new System.NotImplementedException("Not implemented");
-        }
-        public void PrikazIdNakupa()
-        {
-            throw new System.NotImplementedException("Not implemented");
-        }
-        public void IzbraniNacinDeljenja()
-        {
-            throw new System.NotImplementedException("Not implemented");
-        }
-        public void PridobiVseDogodke()
-        {
-            throw new System.NotImplementedException("Not implemented");
-        }
-        public void PrikaziDogodke()
-        {
-            throw new System.NotImplementedException("Not implemented");
-        }
-        public void NajdiDogodek()
-        {
-            throw new System.NotImplementedException("Not implemented");
-        }
-        public void OdpriOknoPotrditev()
-        {
-            throw new System.NotImplementedException("Not implemented");
-        }
-        public void PrikaziUspesnost()
-        {
-            throw new System.NotImplementedException("Not implemented");
-        }
-        public void OdpriOknoDodajanje()
-        {
-            throw new System.NotImplementedException("Not implemented");
-        }
-        public void OdpriOknoPrijava()
-        {
-            throw new System.NotImplementedException("Not implemented");
-        }
-        public void OdpriOknoRezervacija()
-        {
-            throw new System.NotImplementedException("Not implemented");
-        }
-        public void PreveriPopust()
-        {
-          
-            throw new System.NotImplementedException("Not implemented");
-        }
-        public void ZnizajCeno()
-        {
-            throw new System.NotImplementedException("Not implemented");
+            
+            seznamDogodkov = _db.Dogodki
+                .Where(d => d.Ime.Contains(iskalnoPolje, StringComparison.OrdinalIgnoreCase)).ToList();
         }
 
-        private OknoZaVnosPodatkov oknoZaVnosPodatkov;
-        private PrijavnoOkno prijavnoOkno;
-        private PotrditvenoOknoIzbris potrditvenoOknoIzbris;
-        private OknoRezervacija oknoRezervacija;
-        private DodDogodkaOkno dodDogodkaOkno;
-       
+        public void PrikazDogodkov()
+        {
+            seznamDogodkov = _db.Dogodki.ToList();
+            foreach (var dogodek in seznamDogodkov)
+            {
+                // Your display logic here
+                Console.WriteLine($"Event: {dogodek.Ime}, Date: {dogodek.Datum}, Location: {dogodek.Lokacija}");
+            }
+        }
+
+        public async void OnGet()
+        {
+            // Implement your logic for handling GET requests
+            // VrniIskalneParametre();
+            // IskanjeNaVneseneParametre();
+            PrikazDogodkov();
+        }
+
+        public IActionResult OnPost()
+             {
+            // Implement your logic for handling POST requests
+            return RedirectToPage("IskanjeDogodkov");
+             }
+
     }
 }
