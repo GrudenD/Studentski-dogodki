@@ -27,9 +27,10 @@ namespace StudentskiDogodki.Pages
             
         }
 
-        public void OnPost()
+        public IActionResult OnPost()
         {
             DodajaDogodkov();
+            return RedirectToPage("Index");
         }
     }
 }
