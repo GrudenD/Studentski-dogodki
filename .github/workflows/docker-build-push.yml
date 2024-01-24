@@ -31,3 +31,6 @@ jobs:
         tags: |
           grudend/studentski-dogodki:latest
           grudend/studentski-dogodki:${{ github.sha }}
+        
+
+  #zanimivo
